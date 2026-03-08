@@ -1,2010 +1,0 @@
-Dependencies for Project 'aiaudio', Target 'aiaudio': (DO NOT MODIFY !)
-CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32f407xx.s)(0x69AC1B92)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 543" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o aiaudio\startup_stm32f407xx.o --depend aiaudio\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x69AC1B68)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\main.o --omf_browse aiaudio\main.crf --depend aiaudio\main.d)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6947DF6A)
-I (../Core/Inc/dma.h)(0x69AA4AEC)
-I (../Core/Inc/i2s.h)(0x69AA864A)
-I (../Core/Inc/spi.h)(0x69ABA6E7)
-I (../Core/Inc/usart.h)(0x69AA8A64)
-I (../Core/Inc/gpio.h)(0x69AA8F4F)
-F (../Core/Src/gpio.c)(0x69ABAEB4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\gpio.o --omf_browse aiaudio\gpio.crf --depend aiaudio\gpio.d)
-I (../Core/Inc/gpio.h)(0x69AA8F4F)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/freertos.c)(0x69AA55DF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\freertos.o --omf_browse aiaudio\freertos.crf --depend aiaudio\freertos.d)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_TasksInit.h)(0x69AB02B4)
-F (../Core/Src/dma.c)(0x69AA864A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\dma.o --omf_browse aiaudio\dma.crf --depend aiaudio\dma.d)
-I (../Core/Inc/dma.h)(0x69AA4AEC)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/i2s.c)(0x69AC0401)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\i2s.o --omf_browse aiaudio\i2s.crf --depend aiaudio\i2s.d)
-I (../Core/Inc/i2s.h)(0x69AA864A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/spi.c)(0x69ABA6E7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\spi.o --omf_browse aiaudio\spi.crf --depend aiaudio\spi.d)
-I (../Core/Inc/spi.h)(0x69ABA6E7)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/usart.c)(0x69AC2012)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\usart.o --omf_browse aiaudio\usart.crf --depend aiaudio\usart.d)
-I (../Core/Inc/usart.h)(0x69AA8A64)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/stm32f4xx_it.c)(0x69AA8A64)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_it.o --omf_browse aiaudio\stm32f4xx_it.crf --depend aiaudio\stm32f4xx_it.d)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_it.h)(0x69AA8A64)
-F (../Core/Src/stm32f4xx_hal_msp.c)(0x69AA4AED)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_msp.o --omf_browse aiaudio\stm32f4xx_hal_msp.crf --depend aiaudio\stm32f4xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/stm32f4xx_hal_timebase_tim.c)(0x69AA4AED)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_timebase_tim.o --omf_browse aiaudio\stm32f4xx_hal_timebase_tim.crf --depend aiaudio\stm32f4xx_hal_timebase_tim.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (..\User\Func\Src\audio_prompt.c)(0x69AB02D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\audio_prompt.o --omf_browse aiaudio\audio_prompt.crf --depend aiaudio\audio_prompt.d)
-I (..\User\Func\Inc\audio_prompt.h)(0x69AB02DB)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-F (..\User\Func\Src\inmp441.c)(0x69AC1A49)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\inmp441.o --omf_browse aiaudio\inmp441.crf --depend aiaudio\inmp441.d)
-I (../User/Func/Inc/inmp441.h)(0x69AC1A49)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Core/Inc/i2s.h)(0x69AA864A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (..\User\Func\Src\OLED.c)(0x69AB02D3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\oled.o --omf_browse aiaudio\oled.crf --depend aiaudio\oled.d)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../User/Func/Inc/OLED_Font.h)(0x69AB02DD)
-F (..\User\Func\Src\speaker.c)(0x69AB02D4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\speaker.o --omf_browse aiaudio\speaker.crf --depend aiaudio\speaker.d)
-I (../User/Func/Inc/speaker.h)(0x69AB02E2)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../User/Func/Inc/w25qxx.h)(0x69ABAC45)
-I (../Core/Inc/i2s.h)(0x69AA864A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x6947DF6A)
-F (..\User\Func\Src\uart_cli.c)(0x69AC2042)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\uart_cli.o --omf_browse aiaudio\uart_cli.crf --depend aiaudio\uart_cli.d)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-I (../Core/Inc/usart.h)(0x69AA8A64)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../User/Func/Inc/w25qxx.h)(0x69ABAC45)
-I (../User/Func/Inc/inmp441.h)(0x69AC1A49)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../X-CUBE-AI/App/network.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_config.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-I (../X-CUBE-AI/App/network_data_params.h)(0x69AC1B7F)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-F (..\User\Func\Src\w25qxx.c)(0x69ABAEAD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\w25qxx.o --omf_browse aiaudio\w25qxx.crf --depend aiaudio\w25qxx.d)
-I (../User/Func/Inc/w25qxx.h)(0x69ABAC45)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Core/Inc/spi.h)(0x69ABA6E7)
-F (..\User\Tasks\Src\user_AudioFbankTask.c)(0x69AC1CF0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_audiofbanktask.o --omf_browse aiaudio\user_audiofbanktask.crf --depend aiaudio\user_audiofbanktask.d)
-I (../User/Tasks/Inc/user_AudioFbankTask.h)(0x69AB02AF)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../User/Func/Inc/inmp441.h)(0x69AC1A49)
-I (../Middlewares/AudioPreprocessing/Inc/fbank.h)(0x69A02B5C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/AudioPreprocessing/Inc/feature_extraction.h)(0x693D94A6)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-I (../Middlewares/AudioPreprocessing/Inc/common_tables.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/dct.h)(0x695C901C)
-I (../Middlewares/AudioPreprocessing/Inc/mel_filterbank.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/window.h)(0x695BD913)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-I (../Core/Inc/usart.h)(0x69AA8A64)
-F (..\User\Tasks\Src\user_KwsInferTask.c)(0x69AC1F48)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_kwsinfertask.o --omf_browse aiaudio\user_kwsinfertask.crf --depend aiaudio\user_kwsinfertask.d)
-I (../User/Tasks/Inc/user_KwsInferTask.h)(0x69AB02B0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_AudioFbankTask.h)(0x69AB02AF)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_OledDisplayTask.h)(0x69AB02B1)
-I (../User/Func/Inc/speaker.h)(0x69AB02E2)
-I (../X-CUBE-AI/App/network.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_config.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-I (../X-CUBE-AI/App/network_data_params.h)(0x69AC1B7F)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-F (..\User\Tasks\Src\user_TasksInit.c)(0x69AB0287)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_tasksinit.o --omf_browse aiaudio\user_tasksinit.crf --depend aiaudio\user_tasksinit.d)
-I (../User/Tasks/Inc/user_TasksInit.h)(0x69AB02B4)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_AudioFbankTask.h)(0x69AB02AF)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_KwsInferTask.h)(0x69AB02B0)
-I (../User/Tasks/Inc/user_OledDisplayTask.h)(0x69AB02B1)
-I (../User/Tasks/Inc/user_SpeakerTask.h)(0x69AB02B2)
-I (../User/Func/Inc/inmp441.h)(0x69AC1A49)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-I (../User/Func/Inc/speaker.h)(0x69AB02E2)
-I (../User/Func/Inc/w25qxx.h)(0x69ABAC45)
-F (..\User\Tasks\Src\user_OledDisplayTask.c)(0x69AC1F89)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_oleddisplaytask.o --omf_browse aiaudio\user_oleddisplaytask.crf --depend aiaudio\user_oleddisplaytask.d)
-I (../User/Tasks/Inc/user_OledDisplayTask.h)(0x69AB02B1)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../User/Tasks/Inc/user_KwsInferTask.h)(0x69AB02B0)
-I (../User/Func/Inc/OLED.h)(0x69AB02E0)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-F (..\User\Tasks\Src\user_SpeakerTask.c)(0x69AC1F90)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_speakertask.o --omf_browse aiaudio\user_speakertask.crf --depend aiaudio\user_speakertask.d)
-I (../User/Tasks/Inc/user_SpeakerTask.h)(0x69AB02B2)
-I (../User/Func/Inc/speaker.h)(0x69AB02E2)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-F (..\User\Tasks\Src\user_UsartCLITask.c)(0x69AC2029)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\user_usartclitask.o --omf_browse aiaudio\user_usartclitask.crf --depend aiaudio\user_usartclitask.d)
-I (../User/Func/Inc/uart_cli.h)(0x69ABF3DE)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-I (../Core/Inc/usart.h)(0x69AA8A64)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-F (../X-CUBE-AI/App/network_generate_report.txt)(0x69AC1B81)()
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_tim.o --omf_browse aiaudio\stm32f4xx_hal_tim.crf --depend aiaudio\stm32f4xx_hal_tim.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_tim_ex.o --omf_browse aiaudio\stm32f4xx_hal_tim_ex.crf --depend aiaudio\stm32f4xx_hal_tim_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_rcc.o --omf_browse aiaudio\stm32f4xx_hal_rcc.crf --depend aiaudio\stm32f4xx_hal_rcc.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_rcc_ex.o --omf_browse aiaudio\stm32f4xx_hal_rcc_ex.crf --depend aiaudio\stm32f4xx_hal_rcc_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_flash.o --omf_browse aiaudio\stm32f4xx_hal_flash.crf --depend aiaudio\stm32f4xx_hal_flash.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_flash_ex.o --omf_browse aiaudio\stm32f4xx_hal_flash_ex.crf --depend aiaudio\stm32f4xx_hal_flash_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_flash_ramfunc.o --omf_browse aiaudio\stm32f4xx_hal_flash_ramfunc.crf --depend aiaudio\stm32f4xx_hal_flash_ramfunc.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_gpio.o --omf_browse aiaudio\stm32f4xx_hal_gpio.crf --depend aiaudio\stm32f4xx_hal_gpio.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_dma_ex.o --omf_browse aiaudio\stm32f4xx_hal_dma_ex.crf --depend aiaudio\stm32f4xx_hal_dma_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_dma.o --omf_browse aiaudio\stm32f4xx_hal_dma.crf --depend aiaudio\stm32f4xx_hal_dma.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_pwr.o --omf_browse aiaudio\stm32f4xx_hal_pwr.crf --depend aiaudio\stm32f4xx_hal_pwr.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_pwr_ex.o --omf_browse aiaudio\stm32f4xx_hal_pwr_ex.crf --depend aiaudio\stm32f4xx_hal_pwr_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_cortex.o --omf_browse aiaudio\stm32f4xx_hal_cortex.crf --depend aiaudio\stm32f4xx_hal_cortex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal.o --omf_browse aiaudio\stm32f4xx_hal.crf --depend aiaudio\stm32f4xx_hal.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_exti.o --omf_browse aiaudio\stm32f4xx_hal_exti.crf --depend aiaudio\stm32f4xx_hal_exti.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_i2s.o --omf_browse aiaudio\stm32f4xx_hal_i2s.crf --depend aiaudio\stm32f4xx_hal_i2s.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_i2s_ex.o --omf_browse aiaudio\stm32f4xx_hal_i2s_ex.crf --depend aiaudio\stm32f4xx_hal_i2s_ex.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_spi.o --omf_browse aiaudio\stm32f4xx_hal_spi.crf --depend aiaudio\stm32f4xx_hal_spi.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x6947DFAF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stm32f4xx_hal_uart.o --omf_browse aiaudio\stm32f4xx_hal_uart.crf --depend aiaudio\stm32f4xx_hal_uart.d)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Core/Src/system_stm32f4xx.c)(0x6947DFB0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\system_stm32f4xx.o --omf_browse aiaudio\system_stm32f4xx.crf --depend aiaudio\system_stm32f4xx.d)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Middlewares/ST/AI/Lib/NetworkRuntime1020_CM4_Keil.lib)(0x6968A941)()
-F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\croutine.o --omf_browse aiaudio\croutine.crf --depend aiaudio\croutine.d)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\event_groups.o --omf_browse aiaudio\event_groups.crf --depend aiaudio\event_groups.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/list.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\list.o --omf_browse aiaudio\list.crf --depend aiaudio\list.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/queue.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\queue.o --omf_browse aiaudio\queue.crf --depend aiaudio\queue.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\stream_buffer.o --omf_browse aiaudio\stream_buffer.crf --depend aiaudio\stream_buffer.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\tasks.o --omf_browse aiaudio\tasks.crf --depend aiaudio\tasks.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/timers.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\timers.o --omf_browse aiaudio\timers.crf --depend aiaudio\timers.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\cmsis_os2.o --omf_browse aiaudio\cmsis_os2.crf --depend aiaudio\cmsis_os2.d)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h)(0x6947DF6A)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-F (../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\heap_4.o --omf_browse aiaudio\heap_4.crf --depend aiaudio\heap_4.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x6947DF6A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\port.o --omf_browse aiaudio\port.crf --depend aiaudio\port.d)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-F (..\Middlewares\AudioPreprocessing\Src\common_tables.c)(0x695C96C4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\common_tables.o --omf_browse aiaudio\common_tables.crf --depend aiaudio\common_tables.d)
-I (../Middlewares/AudioPreprocessing/Inc/common_tables.h)(0x693D94A6)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-F (..\Middlewares\AudioPreprocessing\Src\dct.c)(0x693D94A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\dct.o --omf_browse aiaudio\dct.crf --depend aiaudio\dct.d)
-I (../Middlewares/AudioPreprocessing/Inc/dct.h)(0x695C901C)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-F (..\Middlewares\AudioPreprocessing\Src\fbank.c)(0x69AA5051)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\fbank.o --omf_browse aiaudio\fbank.crf --depend aiaudio\fbank.d)
-I (../Middlewares/AudioPreprocessing/Inc/feature_extraction.h)(0x693D94A6)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-I (../Middlewares/AudioPreprocessing/Inc/common_tables.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/dct.h)(0x695C901C)
-I (../Middlewares/AudioPreprocessing/Inc/mel_filterbank.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/window.h)(0x695BD913)
-I (../Middlewares/AudioPreprocessing/Inc/fbank.h)(0x69A02B5C)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (../User/Func/Inc/inmp441.h)(0x69AC1A49)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6947DF6A)
-I (../Core/Inc/FreeRTOSConfig.h)(0x69AA4AEC)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6947DF6A)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6947DF6A)
-F (..\Middlewares\AudioPreprocessing\Src\feature_extraction.c)(0x693D94A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\feature_extraction.o --omf_browse aiaudio\feature_extraction.crf --depend aiaudio\feature_extraction.d)
-I (../Middlewares/AudioPreprocessing/Inc/feature_extraction.h)(0x693D94A6)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-I (../Middlewares/AudioPreprocessing/Inc/common_tables.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/dct.h)(0x695C901C)
-I (../Middlewares/AudioPreprocessing/Inc/mel_filterbank.h)(0x693D94A6)
-I (../Middlewares/AudioPreprocessing/Inc/window.h)(0x695BD913)
-F (..\Middlewares\AudioPreprocessing\Src\fifo.c)(0x695E6AE2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\fifo.o --omf_browse aiaudio\fifo.crf --depend aiaudio\fifo.d)
-I (../Middlewares/AudioPreprocessing/Inc/fifo.h)(0x69A02F58)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9B348A)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-F (..\Middlewares\AudioPreprocessing\Src\mel_filterbank.c)(0x695BD961)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\mel_filterbank.o --omf_browse aiaudio\mel_filterbank.crf --depend aiaudio\mel_filterbank.d)
-I (../Middlewares/AudioPreprocessing/Inc/mel_filterbank.h)(0x693D94A6)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-F (..\Middlewares\AudioPreprocessing\Src\spectrogram.c)(0x699D3DA7)()
-F (..\Middlewares\AudioPreprocessing\Src\window.c)(0x695BD916)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\window.o --omf_browse aiaudio\window.crf --depend aiaudio\window.d)
-I (../Middlewares/AudioPreprocessing/Inc/window.h)(0x695BD913)
-I (../Core/Inc/main.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6947DFB0)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69ABA6E8)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6947DFB0)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6947DFB0)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x6947DFB0)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x6947DFB0)
-I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x694635F1)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\float.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-F (../X-CUBE-AI/App/network.c)(0x69AC1B7F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\network.o --omf_browse aiaudio\network.crf --depend aiaudio\network.d)
-I (../X-CUBE-AI/App/network.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_config.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-I (../X-CUBE-AI/App/network_data.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_data_params.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform_interface.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/datatypes_network.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_datatypes.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/ST/AI/Inc/ai_datatypes_defines.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/core_assert.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_datatypes_format.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/formats_list.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/stai.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_math_helpers.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_lite_math_helpers.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9B3482)
-I (D:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5D9B3482)
-I (../Middlewares/ST/AI/Inc/core_common.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/core_datatypes.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/core_convert.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_common.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_common_config.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_list.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_conv2d.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_nl.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/lite_internal_apis.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_lite_interface.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_lite.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/lite_nl_list.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_pool.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/lite_maxpool_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/lite_pool_f32.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_custom.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_dense.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_formats_converters.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_generic.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_lite_graph.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_norm.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_pad_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_pad_generic.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_rnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_sm.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_iforest.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_svc.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_linearclassifier.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_treeensembleclassifier.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_treeensembleregressor.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_ml_svmregressor.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_conv2d_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_dense_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_pool_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_generic_dqnn.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_upsample_generic.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_upsample.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_resize.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_argminmax.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/layers_wrappers.h)(0x6968A941)
-F (../X-CUBE-AI/App/network_data.c)(0x69AC1B7F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\network_data.o --omf_browse aiaudio\network_data.crf --depend aiaudio\network_data.d)
-I (../X-CUBE-AI/App/network_data.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_config.h)(0x69AC1B7F)
-I (../X-CUBE-AI/App/network_data_params.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-I (../Middlewares/ST/AI/Inc/ai_platform_interface.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/datatypes_network.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_datatypes.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9B3488)
-I (../Middlewares/ST/AI/Inc/ai_datatypes_defines.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/core_assert.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/ai_datatypes_format.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/formats_list.h)(0x6968A941)
-I (../Middlewares/ST/AI/Inc/stai.h)(0x6968A941)
-F (../X-CUBE-AI/App/network_data_params.c)(0x69AC1B7F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Middlewares/ST/AI/Inc -I ../X-CUBE-AI/App -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../User/Tasks/Inc -I ../Middlewares/AudioPreprocessing/Inc -I ../User/Func/Inc-I.\RTE\_aiaudio-ID:\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o aiaudio\network_data_params.o --omf_browse aiaudio\network_data_params.crf --depend aiaudio\network_data_params.d)
-I (../X-CUBE-AI/App/network_data_params.h)(0x69AC1B7F)
-I (../Middlewares/ST/AI/Inc/ai_platform.h)(0x6968A941)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5D9B3488)
-I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
-F (../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib)(0x694635F1)()
