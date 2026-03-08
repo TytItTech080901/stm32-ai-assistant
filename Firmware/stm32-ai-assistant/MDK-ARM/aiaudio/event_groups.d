@@ -1,0 +1,15 @@
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+aiaudio\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+aiaudio\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+aiaudio\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+aiaudio\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+aiaudio\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h

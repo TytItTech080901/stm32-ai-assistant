@@ -1,0 +1,386 @@
+ST Edge AI Core v2.2.0-20266 2adc00962
+Created date          : 2026-03-07 20:35:13
+Parameters            : generate --target stm32f4 --name network -m E:/Documents/Projects/STM32F407VGT6-KWS/model/avg_30.onnx --compression none --verbosity 1 --workspace C:/Users/WINDOW~1/AppData/Local/Temp/mxAI_workspace3108569286910011992905165156843511 --output C:/Users/Windows 10/.stm32cubemx/network_output
+
+Exec/report summary (generate)
+---------------------------------------------------------------------------------------------------------------
+model file         :   E:\Documents\Projects\STM32F407VGT6-KWS\model\avg_30.onnx                               
+type               :   onnx                                                                                    
+c_name             :   network                                                                                 
+compression        :   none                                                                                    
+options            :   allocate-inputs, allocate-outputs                                                       
+optimization       :   balanced                                                                                
+target/series      :   stm32f4                                                                                 
+workspace dir      :   C:\Users\WINDOW~1\AppData\Local\Temp\mxAI_workspace3108569286910011992905165156843511   
+output dir         :   C:\Users\Windows 10\.stm32cubemx\network_output                                         
+model_fmt          :   float                                                                                   
+model_name         :   avg_30                                                                                  
+model_hash         :   0xd6511785cbdac8bab7995a5b6aa1ac1f                                                      
+params #           :   22,114 items (86.38 KiB)                                                                
+---------------------------------------------------------------------------------------------------------------
+input 1/1          :   'input', f32(1x80x1), 320 Bytes, activations                                            
+output 1/1         :   'output', f32(1x2x1), 8 Bytes, activations                                              
+macc               :   758                                                                                     
+weights (ro)       :   88,456 B (86.38 KiB) (1 segment)                                                        
+activations (rw)   :   20,736 B (20.25 KiB) (1 segment) *                                                      
+ram (total)        :   20,736 B (20.25 KiB) = 20,736 + 0 + 0                                                   
+---------------------------------------------------------------------------------------------------------------
+(*) 'input'/'output' buffers are allocated in the activations buffer
+
+Model name - avg_30
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+m_id   layer (type,original)                                   oshape                param/size       macc                     connected to   | c_size             c_macc         c_type                 
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+1      kws_model_global_cmvn_mean (Placeholder, Sub)           [b:80]                80/320                                                   |                    +80(+100.0%)   Eltwise/sub_[0]        
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+2      kws_model_global_cmvn_istd (Placeholder, Mul)           [b:80]                80/320                                                   |                    +80(+100.0%)   Eltwise/mul_[1]        
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+26     onnxMatMul_133 (Placeholder, MatMul)                    [b:64,c:2]            128/512                                                  |                                   Dense_[20]             
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+27     kws_model_classifi..inear_bias (Placeholder, Add)       [b:2]                 2/8                                                      |                    +2(+100.0%)    Eltwise/add_[21]       
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+0      input (Input, )                                         [b:1,h:80,c:1]                                                                 |                                   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+1      _kws_model_global_..b_output_0 (Eltwise, Sub)           [b:1,h:80,c:1]                           80                            input   |                    -80(-100.0%)   
+                                                                                                                 kws_model_global_cmvn_mean   | 
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+2      _kws_model_global_..l_output_0 (Eltwise, Mul)           [b:1,h:80,c:1]                           80   _kws_model_global_..b_output_0   |                    -80(-100.0%)   
+                                                                                                                 kws_model_global_cmvn_istd   | 
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+4      _kws_model_backbon..e_output_0 (Reshape, Unsqueeze)     [b:1,h:1,w:80,c:1]                            _kws_model_global_..l_output_0   |                                   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+5      _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   2,624/10,496       64   _kws_model_backbon..e_output_0   |                                   Conv2D_[2]             
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+6      _kws_model_backbon..u_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[3]       
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+7      _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   640/2,560          64   _kws_model_backbon..u_output_0   |                                   Conv2D_[4]             
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+8      _kws_model_backbon..u_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[5]       
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+9      _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   4,160/16,640       64   _kws_model_backbon..u_output_0   |                                   Conv2D_[6]             
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+10     _kws_model_backbon..1_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[7]       
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+11     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   640/2,560          64   _kws_model_backbon..1_output_0   |                                   Conv2D_[8]             
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+12     _kws_model_backbon..u_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[9]       
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+13     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   4,160/16,640       64   _kws_model_backbon..u_output_0   |                                   Conv2D_[10]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+14     _kws_model_backbon..1_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[11]      
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+15     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   640/2,560          64   _kws_model_backbon..1_output_0   |                                   Conv2D_[12]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+16     _kws_model_backbon..u_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[13]      
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+17     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   4,160/16,640       64   _kws_model_backbon..u_output_0   |                                   Conv2D_[14]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+18     _kws_model_backbon..1_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[15]      
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+19     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   640/2,560          64   _kws_model_backbon..1_output_0   |                                   Conv2D_[16]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+20     _kws_model_backbon..u_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   Nonlinearity_[17]      
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+21     _kws_model_backbon..v_output_0 (Conv2D, Conv)           [b:1,h:0,w:40,c:64]   4,160/16,640       64   _kws_model_backbon..u_output_0   | -16,640(-100.0%)   -64(-100.0%)   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+22     _kws_model_backbon..1_output_0 (Nonlinearity, Relu)     [b:1,h:0,w:40,c:64]                           _kws_model_backbon..v_output_0   |                                   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+23     _kws_model_backbon..l_output_0 (Pool, MaxPool)          [b:1,h:0,w:40,c:64]                           _kws_model_backbon..1_output_0   | +16,640(+100.0%)   +64(+100.0%)   Conv2D_[18]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+24     _kws_model_backbon..n_output_0 (Reduce, ReduceMean)     [b:1,h:0,c:64]                                _kws_model_backbon..l_output_0   |                                   Reduce_[19]            
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+25     _kws_model_backbon..e_output_0 (Transpose, Transpose)   [b:1,h:64,c:0]                                _kws_model_backbon..n_output_0   |                                   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+26     _kws_model_classif..l_output_0 (Gemm, MatMul)           [b:1,h:2,c:0]                                 _kws_model_backbon..e_output_0   |                                   
+                                                                                                                             onnxMatMul_133   | 
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+27     _kws_model_classif..d_output_0 (Eltwise, Add)           [b:1,h:2,c:1]                             2   kws_model_classifi..inear_bias   |                    -2(-100.0%)    
+                                                                                                             _kws_model_classif..l_output_0   | 
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+28     output (Nonlinearity, Sigmoid)                          [b:1,h:2,c:1]                            20   _kws_model_classif..d_output_0   |                                   Nonlinearity_[o][22]   
+------ ------------------------------------------------------- --------------------- -------------- ------ -------------------------------- --- ------------------ -------------- ---------------------- 
+model/c-model: macc=758/758  weights=88,456/88,456  activations=--/20,736 io=--/0
+
+
+
+Generated C-graph summary
+------------------------------------------------------------------------------------------------------------------------
+model name            : avg_30
+c-name                : network
+c-node #              : 23
+c-array #             : 52
+activations size      : 20736 (1 segment)
+weights size          : 88456 (1 segment)
+macc                  : 758
+inputs                : ['input_output']
+outputs               : ['output_output']
+
+C-Arrays (52)
+------ -------------------------------------------------------------------- ------------ ------------------------- ------------- --------- 
+c_id   name (*_array)                                                       item/size    domain/mem-pool           c-type        comment   
+------ -------------------------------------------------------------------- ------------ ------------------------- ------------- --------- 
+0      _kws_model_backbone_ReduceMean_output_0_output                       0/0          activations/**default**   float                   
+1      _kws_model_backbone_Relu_output_0_output                             0/0          activations/**default**   float                   
+2      _kws_model_backbone_conv1_Conv_output_0_bias                         64/256       weights/weights           const float             
+3      _kws_model_backbone_conv1_Conv_output_0_output                       0/0          activations/**default**   float                   
+4      _kws_model_backbone_conv1_Conv_output_0_scratch0                     40/160       activations/**default**   float                   
+5      _kws_model_backbone_conv1_Conv_output_0_weights                      2560/10240   weights/weights           const float             
+6      _kws_model_backbone_ds_layers_0_Relu_1_output_0_output               0/0          activations/**default**   float                   
+7      _kws_model_backbone_ds_layers_0_Relu_output_0_output                 0/0          activations/**default**   float                   
+8      _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_bias         64/256       weights/weights           const float             
+9      _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_output       0/0          activations/**default**   float                   
+10     _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_weights      576/2304     weights/weights           const float             
+11     _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_bias         64/256       weights/weights           const float             
+12     _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_output       0/0          activations/**default**   float                   
+13     _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_scratch0     64/256       activations/**default**   float                   
+14     _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_weights      4096/16384   weights/weights           const float             
+15     _kws_model_backbone_ds_layers_1_Relu_1_output_0_output               0/0          activations/**default**   float                   
+16     _kws_model_backbone_ds_layers_1_Relu_output_0_output                 0/0          activations/**default**   float                   
+17     _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_bias         64/256       weights/weights           const float             
+18     _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_output       0/0          activations/**default**   float                   
+19     _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_weights      576/2304     weights/weights           const float             
+20     _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_bias         64/256       weights/weights           const float             
+21     _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_output       0/0          activations/**default**   float                   
+22     _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_scratch0     64/256       activations/**default**   float                   
+23     _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_weights      4096/16384   weights/weights           const float             
+24     _kws_model_backbone_ds_layers_2_Relu_1_output_0_output               0/0          activations/**default**   float                   
+25     _kws_model_backbone_ds_layers_2_Relu_output_0_output                 0/0          activations/**default**   float                   
+26     _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_bias         64/256       weights/weights           const float             
+27     _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_output       0/0          activations/**default**   float                   
+28     _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_weights      576/2304     weights/weights           const float             
+29     _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_bias         64/256       weights/weights           const float             
+30     _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_output       0/0          activations/**default**   float                   
+31     _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_scratch0     64/256       activations/**default**   float                   
+32     _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_weights      4096/16384   weights/weights           const float             
+33     _kws_model_backbone_ds_layers_3_Relu_output_0_output                 0/0          activations/**default**   float                   
+34     _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_bias         64/256       weights/weights           const float             
+35     _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_output       0/0          activations/**default**   float                   
+36     _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_weights      576/2304     weights/weights           const float             
+37     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_bias         64/256       weights/weights           const float             
+38     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_output       0/0          activations/**default**   float                   
+39     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_scratch0     64/256       activations/**default**   float                   
+40     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_scratch1     5120/20480   activations/**default**   float                   
+41     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_weights      4096/16384   weights/weights           const float             
+42     _kws_model_classifier_linear_Add_output_0_output                     2/8          activations/**default**   float                   
+43     _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense_output    0/0          activations/**default**   float                   
+44     _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense_weights   128/512      weights/weights           const float             
+45     _kws_model_global_cmvn_Mul_output_0_output                           80/320       activations/**default**   float                   
+46     _kws_model_global_cmvn_Sub_output_0_output                           80/320       activations/**default**   float                   
+47     input_output                                                         80/320       activations/**default**   float         /input    
+48     kws_model_classifier_linear_bias_3D                                  2/8          weights/weights           const float             
+49     kws_model_global_cmvn_istd_3D                                        80/320       weights/weights           const float             
+50     kws_model_global_cmvn_mean_3D                                        80/320       weights/weights           const float             
+51     output_output                                                        2/8          activations/**default**   float         /output   
+------ -------------------------------------------------------------------- ------------ ------------------------- ------------- --------- 
+
+C-Layers (23)
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+c_id   name (*_layer)                                               id   layer_type      macc   rom     tensors                                                                 shape (array id)      
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+0      _kws_model_global_cmvn_Sub_output_0                          1    Eltwise/sub     80     320     I: input_output                                                         f32(1x80x1) (47)      
+                                                                                                        W: kws_model_global_cmvn_mean_3D                                        f32(80x1) (50)        
+                                                                                                        O: _kws_model_global_cmvn_Sub_output_0_output                           f32(1x80x1) (46)      
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+1      _kws_model_global_cmvn_Mul_output_0                          2    Eltwise/mul     80     320     I: _kws_model_global_cmvn_Sub_output_0_output                           f32(1x80x1) (46)      
+                                                                                                        W: kws_model_global_cmvn_istd_3D                                        f32(80x1) (49)        
+                                                                                                        O: _kws_model_global_cmvn_Mul_output_0_output                           f32(1x80x1) (45)      
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+2      _kws_model_backbone_conv1_Conv_output_0                      5    Conv2D          64     10496   I: _kws_model_global_cmvn_Mul_output_0_output                           f32(1x80x1) (45)      
+                                                                                                        S: _kws_model_backbone_conv1_Conv_output_0_scratch0                                           
+                                                                                                        W: _kws_model_backbone_conv1_Conv_output_0_weights                      f32(64x4x10x1) (5)    
+                                                                                                        W: _kws_model_backbone_conv1_Conv_output_0_bias                         f32(64) (2)           
+                                                                                                        O: _kws_model_backbone_conv1_Conv_output_0_output                       f32(1x0x40x64) (3)    
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+3      _kws_model_backbone_Relu_output_0                            6    Nonlinearity    0      0       I: _kws_model_backbone_conv1_Conv_output_0_output                       f32(1x0x40x64) (3)    
+                                                                                                        O: _kws_model_backbone_Relu_output_0_output                             f32(1x0x40x64) (1)    
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+4      _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0      7    Conv2D          64     2560    I: _kws_model_backbone_Relu_output_0_output                             f32(1x0x40x64) (1)    
+                                                                                                        W: _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_weights      f32(64x3x3x1) (10)    
+                                                                                                        W: _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_bias         f32(64) (8)           
+                                                                                                        O: _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_output       f32(1x0x40x64) (9)    
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+5      _kws_model_backbone_ds_layers_0_Relu_output_0                8    Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_0_depthwise_Conv_output_0_output       f32(1x0x40x64) (9)    
+                                                                                                        O: _kws_model_backbone_ds_layers_0_Relu_output_0_output                 f32(1x0x40x64) (7)    
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+6      _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0      9    Conv2D          64     16640   I: _kws_model_backbone_ds_layers_0_Relu_output_0_output                 f32(1x0x40x64) (7)    
+                                                                                                        S: _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_scratch0                           
+                                                                                                        W: _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_weights      f32(64x1x1x64) (14)   
+                                                                                                        W: _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_bias         f32(64) (11)          
+                                                                                                        O: _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_output       f32(1x0x40x64) (12)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+7      _kws_model_backbone_ds_layers_0_Relu_1_output_0              10   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_0_pointwise_Conv_output_0_output       f32(1x0x40x64) (12)   
+                                                                                                        O: _kws_model_backbone_ds_layers_0_Relu_1_output_0_output               f32(1x0x40x64) (6)    
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+8      _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0      11   Conv2D          64     2560    I: _kws_model_backbone_ds_layers_0_Relu_1_output_0_output               f32(1x0x40x64) (6)    
+                                                                                                        W: _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_weights      f32(64x3x3x1) (19)    
+                                                                                                        W: _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_bias         f32(64) (17)          
+                                                                                                        O: _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_output       f32(1x0x40x64) (18)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+9      _kws_model_backbone_ds_layers_1_Relu_output_0                12   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_1_depthwise_Conv_output_0_output       f32(1x0x40x64) (18)   
+                                                                                                        O: _kws_model_backbone_ds_layers_1_Relu_output_0_output                 f32(1x0x40x64) (16)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+10     _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0      13   Conv2D          64     16640   I: _kws_model_backbone_ds_layers_1_Relu_output_0_output                 f32(1x0x40x64) (16)   
+                                                                                                        S: _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_scratch0                           
+                                                                                                        W: _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_weights      f32(64x1x1x64) (23)   
+                                                                                                        W: _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_bias         f32(64) (20)          
+                                                                                                        O: _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_output       f32(1x0x40x64) (21)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+11     _kws_model_backbone_ds_layers_1_Relu_1_output_0              14   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_1_pointwise_Conv_output_0_output       f32(1x0x40x64) (21)   
+                                                                                                        O: _kws_model_backbone_ds_layers_1_Relu_1_output_0_output               f32(1x0x40x64) (15)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+12     _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0      15   Conv2D          64     2560    I: _kws_model_backbone_ds_layers_1_Relu_1_output_0_output               f32(1x0x40x64) (15)   
+                                                                                                        W: _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_weights      f32(64x3x3x1) (28)    
+                                                                                                        W: _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_bias         f32(64) (26)          
+                                                                                                        O: _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_output       f32(1x0x40x64) (27)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+13     _kws_model_backbone_ds_layers_2_Relu_output_0                16   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_2_depthwise_Conv_output_0_output       f32(1x0x40x64) (27)   
+                                                                                                        O: _kws_model_backbone_ds_layers_2_Relu_output_0_output                 f32(1x0x40x64) (25)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+14     _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0      17   Conv2D          64     16640   I: _kws_model_backbone_ds_layers_2_Relu_output_0_output                 f32(1x0x40x64) (25)   
+                                                                                                        S: _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_scratch0                           
+                                                                                                        W: _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_weights      f32(64x1x1x64) (32)   
+                                                                                                        W: _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_bias         f32(64) (29)          
+                                                                                                        O: _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_output       f32(1x0x40x64) (30)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+15     _kws_model_backbone_ds_layers_2_Relu_1_output_0              18   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_2_pointwise_Conv_output_0_output       f32(1x0x40x64) (30)   
+                                                                                                        O: _kws_model_backbone_ds_layers_2_Relu_1_output_0_output               f32(1x0x40x64) (24)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+16     _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0      19   Conv2D          64     2560    I: _kws_model_backbone_ds_layers_2_Relu_1_output_0_output               f32(1x0x40x64) (24)   
+                                                                                                        W: _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_weights      f32(64x3x3x1) (36)    
+                                                                                                        W: _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_bias         f32(64) (34)          
+                                                                                                        O: _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_output       f32(1x0x40x64) (35)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+17     _kws_model_backbone_ds_layers_3_Relu_output_0                20   Nonlinearity    0      0       I: _kws_model_backbone_ds_layers_3_depthwise_Conv_output_0_output       f32(1x0x40x64) (35)   
+                                                                                                        O: _kws_model_backbone_ds_layers_3_Relu_output_0_output                 f32(1x0x40x64) (33)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+18     _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0      23   Conv2D          64     16640   I: _kws_model_backbone_ds_layers_3_Relu_output_0_output                 f32(1x0x40x64) (33)   
+                                                                                                        S: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_scratch0                           
+                                                                                                        S: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_scratch1                           
+                                                                                                        W: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_weights      f32(64x1x1x64) (41)   
+                                                                                                        W: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_bias         f32(64) (37)          
+                                                                                                        O: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_output       f32(1x0x40x64) (38)   
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+19     _kws_model_backbone_ReduceMean_output_0                      24   Reduce          0      0       I: _kws_model_backbone_ds_layers_3_pointwise_Conv_output_0_output       f32(1x0x40x64) (38)   
+                                                                                                        O: _kws_model_backbone_ReduceMean_output_0_output                       f32(1x0x1x64) (0)     
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+20     _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense   26   Dense           0      512     I: _kws_model_backbone_ReduceMean_output_0_output                       f32(1x0x1x64) (0)     
+                                                                                                        W: _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense_weights   f32(2x64) (44)        
+                                                                                                        O: _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense_output    f32(1x0x2) (43)       
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+21     _kws_model_classifier_linear_Add_output_0                    27   Eltwise/add     2      8       I: _kws_model_classifier_linear_MatMul_output_0_gemm_to_dense_output    f32(1x0x2) (43)       
+                                                                                                        W: kws_model_classifier_linear_bias_3D                                  f32(2x1) (48)         
+                                                                                                        O: _kws_model_classifier_linear_Add_output_0_output                     f32(1x2x1) (42)       
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+22     output                                                       28   Nonlinearity    20     0       I: _kws_model_classifier_linear_Add_output_0_output                     f32(1x2x1) (42)       
+                                                                                                        O: output_output                                                        f32(1x2x1) (51)       
+------ ------------------------------------------------------------ ---- --------------- ------ ------- ----------------------------------------------------------------------- --------------------- 
+
+
+
+Number of operations per c-layer
+------- ------ ----------------------------------------------- ----- -------------- 
+c_id    m_id   name (type)                                       #op           type 
+------- ------ ----------------------------------------------- ----- -------------- 
+0       1      _kws_model_global_..b_output_0 (Eltwise/sub)       80     op_f32_f32 
+1       2      _kws_model_global_..l_output_0 (Eltwise/mul)       80     op_f32_f32 
+2       5      _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+3       6      _kws_model_backbon..u_output_0 (Nonlinearity)       0     op_f32_f32 
+4       7      _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+5       8      _kws_model_backbon..u_output_0 (Nonlinearity)       0     op_f32_f32 
+6       9      _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+7       10     _kws_model_backbon..1_output_0 (Nonlinearity)       0     op_f32_f32 
+8       11     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+9       12     _kws_model_backbon..u_output_0 (Nonlinearity)       0     op_f32_f32 
+10      13     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+11      14     _kws_model_backbon..1_output_0 (Nonlinearity)       0     op_f32_f32 
+12      15     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+13      16     _kws_model_backbon..u_output_0 (Nonlinearity)       0     op_f32_f32 
+14      17     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+15      18     _kws_model_backbon..1_output_0 (Nonlinearity)       0     op_f32_f32 
+16      19     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+17      20     _kws_model_backbon..u_output_0 (Nonlinearity)       0     op_f32_f32 
+18      23     _kws_model_backbon..v_output_0 (Conv2D)            64   smul_f32_f32 
+19      24     _kws_model_backbon..n_output_0 (Reduce)             0   smul_f32_f32 
+20      26     _kws_model_classif..m_to_dense (Dense)              0   smul_f32_f32 
+21      27     _kws_model_classif..d_output_0 (Eltwise/add)        2     op_f32_f32 
+22      28     output (Nonlinearity)                              20     op_f32_f32 
+------- ------ ----------------------------------------------- ----- -------------- 
+total                                                            758 
+
+Number of operation types
+---------------- ----- ----------- 
+operation type       #           % 
+---------------- ----- ----------- 
+op_f32_f32         182       24.0% 
+smul_f32_f32       576       76.0% 
+
+Complexity report (model)
+------ ------------------------------------------ ------------------------- ------------------------- ------ 
+m_id   name                                       c_macc                    c_rom                     c_id   
+------ ------------------------------------------ ------------------------- ------------------------- ------ 
+1      kws_model_global_cmvn_mean                 ||||||||||||||||  10.6%   |                  0.4%   [0]    
+2      kws_model_global_cmvn_istd                 ||||||||||||||||  10.6%   |                  0.4%   [1]    
+26     onnxMatMul_133                             |                  0.0%   |                  0.6%   [20]   
+27     kws_model_classifier_linear_bias           |                  0.3%   |                  0.0%   [21]   
+5      _kws_model_backbone_conv1_Conv_output_0    |||||||||||||      8.4%   ||||||||||        11.9%   [2]    
+6      _kws_model_backbone_Relu_output_0          |                  0.0%   |                  0.0%   [3]    
+7      _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   |||                2.9%   [4]    
+8      _kws_model_backbone_ds_layer..u_output_0   |                  0.0%   |                  0.0%   [5]    
+9      _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   ||||||||||||||||  18.8%   [6]    
+10     _kws_model_backbone_ds_layer..1_output_0   |                  0.0%   |                  0.0%   [7]    
+11     _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   |||                2.9%   [8]    
+12     _kws_model_backbone_ds_layer..u_output_0   |                  0.0%   |                  0.0%   [9]    
+13     _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   ||||||||||||||||  18.8%   [10]   
+14     _kws_model_backbone_ds_layer..1_output_0   |                  0.0%   |                  0.0%   [11]   
+15     _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   |||                2.9%   [12]   
+16     _kws_model_backbone_ds_layer..u_output_0   |                  0.0%   |                  0.0%   [13]   
+17     _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   ||||||||||||||||  18.8%   [14]   
+18     _kws_model_backbone_ds_layer..1_output_0   |                  0.0%   |                  0.0%   [15]   
+19     _kws_model_backbone_ds_layer..v_output_0   |||||||||||||      8.4%   |||                2.9%   [16]   
+20     _kws_model_backbone_ds_layer..u_output_0   |                  0.0%   |                  0.0%   [17]   
+23     _kws_model_backbone_pooling_..l_output_0   |||||||||||||      8.4%   ||||||||||||||||  18.8%   [18]   
+24     _kws_model_backbone_ReduceMean_output_0    |                  0.0%   |                  0.0%   [19]   
+28     output                                     ||||               2.6%   |                  0.0%   [22]   
+------ ------------------------------------------ ------------------------- ------------------------- ------ 
+macc=758 weights=88,456 act=20,736 ram_io=0
+ 
+ Requested memory size by section - "stm32f4" target
+ ------------------------------ -------- -------- ------- -------- 
+ module                             text   rodata    data      bss 
+ ------------------------------ -------- -------- ------- -------- 
+ NetworkRuntime1020_CM4_GCC.a     15,576        0       0        0 
+ network.o                         1,176      204   6,924      316 
+ network_data.o                       48       16      88        0 
+ lib (toolchain)*                    614       24       0        0 
+ ------------------------------ -------- -------- ------- -------- 
+ RT total**                       17,414      244   7,012      316 
+ ------------------------------ -------- -------- ------- -------- 
+ weights                               0   88,456       0        0 
+ activations                           0        0       0   20,736 
+ io                                    0        0       0        0 
+ ------------------------------ -------- -------- ------- -------- 
+ TOTAL                            17,414   88,700   7,012   21,052 
+ ------------------------------ -------- -------- ------- -------- 
+ *  toolchain objects (libm/libgcc*)
+ ** RT AI runtime objects (kernels+infrastructure)
+  
+  Summary - "stm32f4" target
+  ---------------------------------------------------
+               FLASH (ro)      %*   RAM (rw)       % 
+  ---------------------------------------------------
+  RT total         24,670   21.8%      7,328   26.1% 
+  ---------------------------------------------------
+  TOTAL           113,126             28,064         
+  ---------------------------------------------------
+  *  rt/total
+
+
+Generated files (7)
+----------------------------------------------------------------------- 
+C:\Users\Windows 10\.stm32cubemx\network_output\network_data_params.h   
+C:\Users\Windows 10\.stm32cubemx\network_output\network_data_params.c   
+C:\Users\Windows 10\.stm32cubemx\network_output\network_data.h          
+C:\Users\Windows 10\.stm32cubemx\network_output\network_data.c          
+C:\Users\Windows 10\.stm32cubemx\network_output\network_config.h        
+C:\Users\Windows 10\.stm32cubemx\network_output\network.h               
+C:\Users\Windows 10\.stm32cubemx\network_output\network.c               

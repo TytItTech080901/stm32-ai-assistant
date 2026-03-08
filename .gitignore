@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Visual Studio Code files
+.vscode
+.vs
+
+.idea
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*.swm
+*~
+
+# macOS dir files
+.DS_Store
+
+**/*build*

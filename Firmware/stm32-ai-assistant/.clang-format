@@ -1,0 +1,53 @@
+BasedOnStyle: LLVM
+
+# 基本缩进
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+# 行宽
+ColumnLimit: 100
+
+# 指针风格
+PointerAlignment: Left
+
+# 大括号规则
+BreakBeforeBraces: Custom
+
+BraceWrapping:
+  AfterFunction: true
+  AfterControlStatement: false
+  AfterClass: true
+  AfterStruct: true
+  AfterEnum: true
+  BeforeElse: false
+  BeforeCatch: false
+  IndentBraces: false
+
+# switch-case
+IndentCaseLabels: true
+
+# 短语句
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+
+# struct / enum
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+
+# include排序
+SortIncludes: false
+
+# 空格
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+
+# 结构体
+AlignAfterOpenBracket: Align
+
+# 注释
+ReflowComments: false
+
+# 宏
+IndentPPDirectives: None
