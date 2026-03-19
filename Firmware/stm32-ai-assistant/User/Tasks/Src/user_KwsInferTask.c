@@ -58,100 +58,100 @@ static int AI_Run(const float* pIn, float* pOut);
 
 void KwsInferTask(void* argument)
 {
-  // if (g_dump_mode) {
-  //   vTaskSuspend(NULL);
-  // }
-  float feat[FBANK_BINS];
+    // if (g_dump_mode) {
+    //   vTaskSuspend(NULL);
+    // }
+    float feat[FBANK_BINS];
 
-  if (AI_Init() != 0) {
-    vTaskSuspend(NULL);
-  }
-  kws_model_ready = 1;
-  memset(prob_ring, 0, sizeof(prob_ring));
-
-  for (;;) {
-    if (xQueueReceive(xFbankQueue, feat, portMAX_DELAY) != pdTRUE) {
-      continue;
+    if (AI_Init() != 0) {
+        vTaskSuspend(NULL);
     }
-    memcpy(ai_in_data, feat, sizeof(float) * FBANK_BINS);
+    kws_model_ready = 1;
+    memset(prob_ring, 0, sizeof(prob_ring));
 
-    if (AI_Run(ai_in_data, ai_out_data) != 0) {
-      continue;
-    }
+    for (;;) {
+        if (xQueueReceive(xFbankQueue, feat, portMAX_DELAY) != pdTRUE) {
+            continue;
+        }
+        memcpy(ai_in_data, feat, sizeof(float) * FBANK_BINS);
 
-    float kw_prob = ai_out_data[0];
+        if (AI_Run(ai_in_data, ai_out_data) != 0) {
+            continue;
+        }
+
+        float kw_prob = ai_out_data[0];
 
 #if KWS_DEBUG_PRINT_INTERVAL > 0
-    debug_frame_cnt++;
-    if (debug_frame_cnt >= KWS_DEBUG_PRINT_INTERVAL) {
-      debug_frame_cnt = 0;
-      printf("[KWS] raw: out[0]=%.3f out[1]=%.3f avg=%.3f\r\n", (double)ai_out_data[0],
-             (double)ai_out_data[1], (double)kw_prob);
-    }
+        debug_frame_cnt++;
+        if (debug_frame_cnt >= KWS_DEBUG_PRINT_INTERVAL) {
+            debug_frame_cnt = 0;
+            printf("[KWS] raw: out[0]=%.3f out[1]=%.3f avg=%.3f\r\n", (double)ai_out_data[0],
+                   (double)ai_out_data[1], (double)kw_prob);
+        }
 #endif
 
-    prob_ring[ring_idx] = kw_prob;
-    ring_idx++;
-    if (ring_idx >= SMOOTH_WIN) {
-      ring_idx    = 0;
-      ring_filled = 1;
+        prob_ring[ring_idx] = kw_prob;
+        ring_idx++;
+        if (ring_idx >= SMOOTH_WIN) {
+            ring_idx    = 0;
+            ring_filled = 1;
+        }
+
+        uint8_t count = ring_filled ? SMOOTH_WIN : ring_idx;
+        float   sum   = 0.0f;
+        for (uint8_t i = 0; i < count; i++) {
+            sum += prob_ring[i];
+        }
+        float avg_prob = (count > 0) ? (sum / count) : 0.0f;
+
+        if (cooldown_cnt > 0) {
+            cooldown_cnt--;
+            continue;
+        }
+
+        // 判定
+        if (avg_prob > KWS_THRESHOLD) {
+            HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_5);
+            printf("[KWS] Keyword detected! avg_prob=%.2f\r\n", avg_prob);
+
+            OLED_KwsEvent_t oled_evt = {.confidence = avg_prob};
+            xQueueSend(xOledEventQueue, &oled_evt, 0);
+
+            Speaker_PlayFromFlash(PROMPT_FLASH_ADDR, PROMPT_SAMPLES);
+
+            cooldown_cnt = COOLDOWN_FRAMES;
+            memset(prob_ring, 0, sizeof(prob_ring));
+            ring_idx    = 0;
+            ring_filled = 0;
+        }
     }
-
-    uint8_t count = ring_filled ? SMOOTH_WIN : ring_idx;
-    float   sum   = 0.0f;
-    for (uint8_t i = 0; i < count; i++) {
-      sum += prob_ring[i];
-    }
-    float avg_prob = (count > 0) ? (sum / count) : 0.0f;
-
-    if (cooldown_cnt > 0) {
-      cooldown_cnt--;
-      continue;
-    }
-
-    // 判定
-    if (avg_prob > KWS_THRESHOLD) {
-      HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_5);
-      printf("[KWS] Keyword detected! avg_prob=%.2f\r\n", avg_prob);
-
-      OLED_KwsEvent_t oled_evt = {.confidence = avg_prob};
-      xQueueSend(xOledEventQueue, &oled_evt, 0);
-
-      Speaker_PlayFromFlash(PROMPT_FLASH_ADDR, PROMPT_SAMPLES);
-
-      cooldown_cnt = COOLDOWN_FRAMES;
-      memset(prob_ring, 0, sizeof(prob_ring));
-      ring_idx    = 0;
-      ring_filled = 0;
-    }
-  }
 }
 
 static int AI_Init(void)
 {
-  ai_error err;
+    ai_error err;
 
-  const ai_handle acts[] = {activations};
-  err                    = ai_network_create_and_init(&network_handle, acts, NULL);
-  if (err.type != AI_ERROR_NONE) {
-    return -1;
-  }
-  return 0;
+    const ai_handle acts[] = {activations};
+    err                    = ai_network_create_and_init(&network_handle, acts, NULL);
+    if (err.type != AI_ERROR_NONE) {
+        return -1;
+    }
+    return 0;
 }
 
 static int AI_Run(const float* pIn, float* pOut)
 {
-  ai_i32 n_batch;
+    ai_i32 n_batch;
 
-  ai_buffer* ai_input  = ai_network_inputs_get(network_handle, NULL);
-  ai_buffer* ai_output = ai_network_outputs_get(network_handle, NULL);
+    ai_buffer* ai_input  = ai_network_inputs_get(network_handle, NULL);
+    ai_buffer* ai_output = ai_network_outputs_get(network_handle, NULL);
 
-  ai_input[0].data  = AI_HANDLE_PTR(pIn);
-  ai_output[0].data = AI_HANDLE_PTR(pOut);
+    ai_input[0].data  = AI_HANDLE_PTR(pIn);
+    ai_output[0].data = AI_HANDLE_PTR(pOut);
 
-  n_batch = ai_network_run(network_handle, ai_input, ai_output);
-  if (n_batch != 1) {
-    return -1;
-  }
-  return 0;
+    n_batch = ai_network_run(network_handle, ai_input, ai_output);
+    if (n_batch != 1) {
+        return -1;
+    }
+    return 0;
 }

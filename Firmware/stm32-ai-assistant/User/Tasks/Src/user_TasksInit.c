@@ -46,26 +46,26 @@ const osThreadAttr_t SpeakerTask_attributes = {
 
 void User_Tasks_Init(void)
 {
-  xFbankQueue = xQueueCreate(4, sizeof(float) * 80);
-  configASSERT(xFbankQueue != NULL);
+    xFbankQueue = xQueueCreate(4, sizeof(float) * 80);
+    configASSERT(xFbankQueue != NULL);
 
-  AudioFbankTaskHandle  = osThreadNew(AudioFbankTask, NULL, &AudioFbankTask_attributes);
-  xAudioFbankTaskHandle = (TaskHandle_t)AudioFbankTaskHandle;
+    AudioFbankTaskHandle  = osThreadNew(AudioFbankTask, NULL, &AudioFbankTask_attributes);
+    xAudioFbankTaskHandle = (TaskHandle_t)AudioFbankTaskHandle;
 
-  KwsInferTaskHandle = osThreadNew(KwsInferTask, NULL, &KwsInferTask_attributes);
+    KwsInferTaskHandle = osThreadNew(KwsInferTask, NULL, &KwsInferTask_attributes);
 
-  /* 创建 CLI 任务：先启动中断接收，再创建任务 */
-  UART_StartReceiveIT();
-  UartCliTaskHandle = osThreadNew(UartCliTask, NULL, &UartCliTask_attributes);
+    /* 创建 CLI 任务：先启动中断接收，再创建任务 */
+    UART_StartReceiveIT();
+    UartCliTaskHandle = osThreadNew(UartCliTask, NULL, &UartCliTask_attributes);
 
-  /* 创建 OLED 显示任务 */
-  xOledEventQueue = xQueueCreate(2, sizeof(OLED_KwsEvent_t));
-  configASSERT(xOledEventQueue != NULL);
-  OledDisplayTaskHandle = osThreadNew(OledDisplayTask, NULL, &OledDisplayTask_attributes);
+    /* 创建 OLED 显示任务 */
+    xOledEventQueue = xQueueCreate(2, sizeof(OLED_KwsEvent_t));
+    configASSERT(xOledEventQueue != NULL);
+    OledDisplayTaskHandle = osThreadNew(OledDisplayTask, NULL, &OledDisplayTask_attributes);
 
-  /* 创建 Speaker 播放任务 */
-  W25Q_Init();
-  xSpeakerQueue = xQueueCreate(2, sizeof(Speaker_Request_t));
-  configASSERT(xSpeakerQueue != NULL);
-  SpeakerTaskHandle = osThreadNew(SpeakerTask, NULL, &SpeakerTask_attributes);
+    /* 创建 Speaker 播放任务 */
+    W25Q_Init();
+    xSpeakerQueue = xQueueCreate(2, sizeof(Speaker_Request_t));
+    configASSERT(xSpeakerQueue != NULL);
+    SpeakerTaskHandle = osThreadNew(SpeakerTask, NULL, &SpeakerTask_attributes);
 }

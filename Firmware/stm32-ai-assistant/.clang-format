@@ -1,8 +1,8 @@
 BasedOnStyle: LLVM
 
 # 基本缩进
-IndentWidth: 2
-TabWidth: 2
+IndentWidth: 4
+TabWidth: 4
 UseTab: Never
 
 # 行宽
