@@ -46,7 +46,6 @@ int reverse_bits(int x, int log2n)
 
 double log_base(double x, double base)
 {
-    if (x <= 0 &&)
 }
 
 void bit_reverse(Complex* x, int N)

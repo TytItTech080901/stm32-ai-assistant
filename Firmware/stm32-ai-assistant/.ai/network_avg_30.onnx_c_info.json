@@ -1589,44 +1589,44 @@
   ],
   "environment": {
     "generated_model": {
-      "generated_time": "2026-03-06T16:04:06+0800",
+      "generated_time": "2026-03-21T00:26:48+0800",
       "model_files": [
         {
           "name": "network_data_params.h",
-          "signature": "0xc872973ae897503963008cfb29e58e93"
+          "signature": "0x28cbcaa07a1356ca5fe463f0f0a24e9b"
         },
         {
           "name": "network_data_params.c",
-          "signature": "0x3b54d13392b0cd1519c61d3d293d865c"
+          "signature": "0xfd40cbb8e38b8dc496f9207a5a2233a1"
         },
         {
           "name": "network_data.h",
-          "signature": "0xb7d49c39f342f496049680239a9e0ade"
+          "signature": "0x64ac114f6bdf8ff058ffab3394f3e295"
         },
         {
           "name": "network_data.c",
-          "signature": "0x6feeee6b4a2111302ce87582a0d432e1"
+          "signature": "0xaabd2c2b779d2e2bff9e69ca5b730f7c"
         },
         {
           "name": "network_config.h",
-          "signature": "0xe9cbceda541e17da7436bf0dbb6c1b60"
+          "signature": "0xc6dddc3b938bc8882d451aa3107459ea"
         },
         {
           "name": "network.h",
-          "signature": "0x7f220c00e3e255787afd225962b93fe6"
+          "signature": "0x6262467eae44dd1c15dc6a3c2be3e488"
         },
         {
           "name": "network.c",
-          "signature": "0xd4cd236fe07c4f3bc301c2a0f598a740"
+          "signature": "0x62bee0dd53528ca32f947941e9018ca0"
         }
       ],
       "name": "network"
     },
-    "network_signature": "0x75f94712e3e06f3a",
+    "network_signature": "0x79e2beaf1960c960",
     "test_name": "",
     "tools": [
       {
-        "arguments": "generate --target stm32f4 --name network -m E:/Documents/Projects/STM32F407VGT6-KWS/model/avg_30.onnx --compression none --verbosity 1 --workspace C:/Users/WINDOW~1/AppData/Local/Temp/mxAI_workspace238061241148009350158349352114928 --output C:/Users/Windows 10/.stm32cubemx/network_output",
+        "arguments": "generate --target stm32f4 --name network -m E:/workspace/projects/embedded/stm32-ai-assistant/model/avg_30.onnx --compression none --verbosity 1 --workspace C:/Users/Yitao/AppData/Local/Temp/mxAI_workspace8314141652009689808798496257906 --output C:/Users/Yitao/.stm32cubemx/network_output",
         "environment": [
           "STATS_TYPE=X-CUBE-AI"
         ],
@@ -2723,11 +2723,11 @@
       0,
       0
     ],
-    "kernel_flash": 24670,
+    "kernel_flash": 24764,
     "kernel_ram": 7328,
     "series": "stm32f4",
-    "toolchain": "arm-none-eabi-gcc (GNU Tools for STM32 13.3.rel1.20250523-0900) 13.3.1 20240614",
-    "toolchain_flash": 638,
+    "toolchain": "arm-none-eabi-gcc (GNU Tools for STM32 14.3.rel1.20251027-0700) 14.3.1 20250623",
+    "toolchain_flash": 736,
     "toolchain_ram": 0,
     "weights": 88456
   },

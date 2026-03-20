@@ -1,30 +1,30 @@
 ST Edge AI Core v2.2.0-20266 2adc00962
-Created date          : 2026-03-07 20:35:13
-Parameters            : generate --target stm32f4 --name network -m E:/Documents/Projects/STM32F407VGT6-KWS/model/avg_30.onnx --compression none --verbosity 1 --workspace C:/Users/WINDOW~1/AppData/Local/Temp/mxAI_workspace3108569286910011992905165156843511 --output C:/Users/Windows 10/.stm32cubemx/network_output
+Created date          : 2026-03-21 00:26:50
+Parameters            : generate --target stm32f4 --name network -m E:/workspace/projects/embedded/stm32-ai-assistant/model/avg_30.onnx --compression none --verbosity 1 --workspace C:/Users/Yitao/AppData/Local/Temp/mxAI_workspace8314141652009689808798496257906 --output C:/Users/Yitao/.stm32cubemx/network_output
 
 Exec/report summary (generate)
----------------------------------------------------------------------------------------------------------------
-model file         :   E:\Documents\Projects\STM32F407VGT6-KWS\model\avg_30.onnx                               
-type               :   onnx                                                                                    
-c_name             :   network                                                                                 
-compression        :   none                                                                                    
-options            :   allocate-inputs, allocate-outputs                                                       
-optimization       :   balanced                                                                                
-target/series      :   stm32f4                                                                                 
-workspace dir      :   C:\Users\WINDOW~1\AppData\Local\Temp\mxAI_workspace3108569286910011992905165156843511   
-output dir         :   C:\Users\Windows 10\.stm32cubemx\network_output                                         
-model_fmt          :   float                                                                                   
-model_name         :   avg_30                                                                                  
-model_hash         :   0xd6511785cbdac8bab7995a5b6aa1ac1f                                                      
-params #           :   22,114 items (86.38 KiB)                                                                
----------------------------------------------------------------------------------------------------------------
-input 1/1          :   'input', f32(1x80x1), 320 Bytes, activations                                            
-output 1/1         :   'output', f32(1x2x1), 8 Bytes, activations                                              
-macc               :   758                                                                                     
-weights (ro)       :   88,456 B (86.38 KiB) (1 segment)                                                        
-activations (rw)   :   20,736 B (20.25 KiB) (1 segment) *                                                      
-ram (total)        :   20,736 B (20.25 KiB) = 20,736 + 0 + 0                                                   
----------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+model file         :   E:\workspace\projects\embedded\stm32-ai-assistant\model\avg_30.onnx               
+type               :   onnx                                                                              
+c_name             :   network                                                                           
+compression        :   none                                                                              
+options            :   allocate-inputs, allocate-outputs                                                 
+optimization       :   balanced                                                                          
+target/series      :   stm32f4                                                                           
+workspace dir      :   C:\Users\Yitao\AppData\Local\Temp\mxAI_workspace8314141652009689808798496257906   
+output dir         :   C:\Users\Yitao\.stm32cubemx\network_output                                        
+model_fmt          :   float                                                                             
+model_name         :   avg_30                                                                            
+model_hash         :   0xd6511785cbdac8bab7995a5b6aa1ac1f                                                
+params #           :   22,114 items (86.38 KiB)                                                          
+---------------------------------------------------------------------------------------------------------
+input 1/1          :   'input', f32(1x80x1), 320 Bytes, activations                                      
+output 1/1         :   'output', f32(1x2x1), 8 Bytes, activations                                        
+macc               :   758                                                                               
+weights (ro)       :   88,456 B (86.38 KiB) (1 segment)                                                  
+activations (rw)   :   20,736 B (20.25 KiB) (1 segment) *                                                
+ram (total)        :   20,736 B (20.25 KiB) = 20,736 + 0 + 0                                             
+---------------------------------------------------------------------------------------------------------
 (*) 'input'/'output' buffers are allocated in the activations buffer
 
 Model name - avg_30
@@ -349,17 +349,17 @@ macc=758 weights=88,456 act=20,736 ram_io=0
  module                             text   rodata    data      bss 
  ------------------------------ -------- -------- ------- -------- 
  NetworkRuntime1020_CM4_GCC.a     15,576        0       0        0 
- network.o                         1,176      204   6,924      316 
+ network.o                         1,172      204   6,924      316 
  network_data.o                       48       16      88        0 
- lib (toolchain)*                    614       24       0        0 
+ lib (toolchain)*                    712       24       0        0 
  ------------------------------ -------- -------- ------- -------- 
- RT total**                       17,414      244   7,012      316 
+ RT total**                       17,508      244   7,012      316 
  ------------------------------ -------- -------- ------- -------- 
  weights                               0   88,456       0        0 
  activations                           0        0       0   20,736 
  io                                    0        0       0        0 
  ------------------------------ -------- -------- ------- -------- 
- TOTAL                            17,414   88,700   7,012   21,052 
+ TOTAL                            17,508   88,700   7,012   21,052 
  ------------------------------ -------- -------- ------- -------- 
  *  toolchain objects (libm/libgcc*)
  ** RT AI runtime objects (kernels+infrastructure)
@@ -368,19 +368,19 @@ macc=758 weights=88,456 act=20,736 ram_io=0
   ---------------------------------------------------
                FLASH (ro)      %*   RAM (rw)       % 
   ---------------------------------------------------
-  RT total         24,670   21.8%      7,328   26.1% 
+  RT total         24,764   21.9%      7,328   26.1% 
   ---------------------------------------------------
-  TOTAL           113,126             28,064         
+  TOTAL           113,220             28,064         
   ---------------------------------------------------
   *  rt/total
 
 
 Generated files (7)
------------------------------------------------------------------------ 
-C:\Users\Windows 10\.stm32cubemx\network_output\network_data_params.h   
-C:\Users\Windows 10\.stm32cubemx\network_output\network_data_params.c   
-C:\Users\Windows 10\.stm32cubemx\network_output\network_data.h          
-C:\Users\Windows 10\.stm32cubemx\network_output\network_data.c          
-C:\Users\Windows 10\.stm32cubemx\network_output\network_config.h        
-C:\Users\Windows 10\.stm32cubemx\network_output\network.h               
-C:\Users\Windows 10\.stm32cubemx\network_output\network.c               
+------------------------------------------------------------------ 
+C:\Users\Yitao\.stm32cubemx\network_output\network_data_params.h   
+C:\Users\Yitao\.stm32cubemx\network_output\network_data_params.c   
+C:\Users\Yitao\.stm32cubemx\network_output\network_data.h          
+C:\Users\Yitao\.stm32cubemx\network_output\network_data.c          
+C:\Users\Yitao\.stm32cubemx\network_output\network_config.h        
+C:\Users\Yitao\.stm32cubemx\network_output\network.h               
+C:\Users\Yitao\.stm32cubemx\network_output\network.c               
