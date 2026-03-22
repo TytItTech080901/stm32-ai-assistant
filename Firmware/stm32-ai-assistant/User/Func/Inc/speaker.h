@@ -12,10 +12,9 @@
  * flash_addr 是 W25Q16 芯片内部地址 (0x000000 ~ 0x1FFFFF)
  * samples    采样点数 (不是字节数, 字节数 = samples × 2)
  */
-typedef struct
-{
-  uint32_t flash_addr;
-  uint32_t samples;
+typedef struct {
+    uint32_t flash_addr;
+    uint32_t samples;
 } Speaker_Request_t;
 
 extern QueueHandle_t xSpeakerQueue;

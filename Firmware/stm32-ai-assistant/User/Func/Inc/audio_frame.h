@@ -20,11 +20,11 @@ typedef struct {
     float32_t                  scratch_buffer[FFT_LEN];
 } AudioSpectrumState;
 
-void AudioFrame_Init(AudioFrameFrontendState* state, uint32_t frame_len, uint32_t hop_len);
+void    AudioFrame_Init(AudioFrameFrontendState* state, uint32_t frame_len, uint32_t hop_len);
 uint8_t AudioFrame_PushPcmHop(AudioFrameFrontendState* state, const int16_t* pcm,
-                                      uint32_t sample_count);
+                              uint32_t sample_count);
 void    AudioFrame_GetFrame(const AudioFrameFrontendState* state, float32_t* out_frame,
-                                    uint32_t out_len);
+                            uint32_t out_len);
 
 int AudioSpectrum_Init(AudioSpectrumState* state, uint32_t sample_rate, uint32_t frame_len,
                        uint32_t fft_len, Spectrogram_TypeTypedef type);

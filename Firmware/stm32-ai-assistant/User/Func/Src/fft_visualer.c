@@ -1,5 +1,5 @@
 #include "fft_visualer.h"
-#include "audio_frontend.h"
+#include "audio_frame.h"
 #include "fbank.h"
 #include <math.h>
 #include <string.h>
@@ -12,7 +12,7 @@ static float32_t               s_smoothed_bands[FFT_VISUAL_MAX_BANDS];
 
 void FFTvisualer_Init(void)
 {
-    AudioFrameFrontend_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
+    AudioFrame_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
     if (AudioSpectrum_Init(&s_fft_spectrum, SAMPLE_RATE, FRAME_LEN, FFT_LEN, SPECTRUM_TYPE_POWER) !=
         0) {
         while (1) {
@@ -23,7 +23,7 @@ void FFTvisualer_Init(void)
 
 void FFTvisualer_Reset(void)
 {
-    AudioFrameFrontend_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
+    AudioFrame_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
     memset(s_smoothed_bands, 0, sizeof(s_smoothed_bands));
 }
 
@@ -34,11 +34,11 @@ uint8_t FFTvisualer_ProcessPcmHop(const int16_t* pcm, uint32_t sample_count, uin
         return 0;
     }
 
-    if (AudioFrameFrontend_PushPcmHop(&s_fft_frontend, pcm, sample_count) == 0) {
+    if (AudioFrame_PushPcmHop(&s_fft_frontend, pcm, sample_count) == 0) {
         return 0;
     }
 
-    AudioFrameFrontend_GetFrame(&s_fft_frontend, s_fft_frame, FFT_LEN);
+    AudioFrame_GetFrame(&s_fft_frontend, s_fft_frame, FFT_LEN);
     AudioSpectrum_Compute(&s_fft_spectrum, s_fft_frame, s_fft_power, FFT_LEN / 2 + 1);
 
     for (uint32_t band = 0; band < band_count; ++band) {

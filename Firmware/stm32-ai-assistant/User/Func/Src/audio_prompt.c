@@ -16,17 +16,17 @@ int16_t beep_pcm[BEEP_PCM_LEN];
 
 void AudioPrompt_Init(void)
 {
-  for (uint32_t i = 0; i < BEEP_PCM_LEN; i++) {
-    float t      = (float)i / BEEP_SAMPLE_RATE;
-    float sample = sinf(2.0f * M_PI * BEEP_FREQ_HZ * t);
+    for (uint32_t i = 0; i < BEEP_PCM_LEN; i++) {
+        float t      = (float)i / BEEP_SAMPLE_RATE;
+        float sample = sinf(2.0f * M_PI * BEEP_FREQ_HZ * t);
 
-    /* 简单淡入淡出: 前后各 800 样本 (50ms) */
-    float env = 1.0f;
-    if (i < 800)
-      env = (float)i / 800.0f;
-    else if (i > BEEP_PCM_LEN - 800)
-      env = (float)(BEEP_PCM_LEN - i) / 800.0f;
+        /* 简单淡入淡出: 前后各 800 样本 (50ms) */
+        float env = 1.0f;
+        if (i < 800)
+            env = (float)i / 800.0f;
+        else if (i > BEEP_PCM_LEN - 800)
+            env = (float)(BEEP_PCM_LEN - i) / 800.0f;
 
-    beep_pcm[i] = (int16_t)(sample * env * BEEP_AMPLITUDE);
-  }
+        beep_pcm[i] = (int16_t)(sample * env * BEEP_AMPLITUDE);
+    }
 }

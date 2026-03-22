@@ -42,23 +42,42 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
 )
 
-# Collect all C sources under User/ recursively.
-file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/User/*.c
+# User sources maintained explicitly to keep the build graph predictable.
+set(USER_FUNC_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/OLED.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/audio_frame.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/audio_prompt.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/fft_visualer.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/inmp441.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/speaker.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/uart_cli.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/w25qxx.c
 )
 
-# Collect all C sources under AudioPreprocessing/ recursively.
-file(GLOB_RECURSE AUDIO_PREPROCESSING_SOURCES CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/*.c
+set(USER_TASK_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_AudioFbankTask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_KwsInferTask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_OledDisplayTask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_ShowAudioTask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_SpeakerTask.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_TasksInit.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/User/Tasks/Src/user_UsartCLITask.c
 )
-list(REMOVE_ITEM AUDIO_PREPROCESSING_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/spectrogram.c
+
+set(AUDIO_PREPROCESSING_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/common_tables.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/dct.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/fbank.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/feature_extraction.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/fifo.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/mel_filterbank.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Middlewares/AudioPreprocessing/Src/window.c
 )
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
-    ${USER_SOURCES}
+    ${USER_FUNC_SOURCES}
+    ${USER_TASK_SOURCES}
     ${AUDIO_PREPROCESSING_SOURCES}
 )
 
@@ -68,7 +87,6 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     User/Tasks/Inc
     User/Func/Inc
     Middlewares/AudioPreprocessing/Inc
-    Middlewares/AudioPreprocessing
 )
 
 # Add project symbols (macros)

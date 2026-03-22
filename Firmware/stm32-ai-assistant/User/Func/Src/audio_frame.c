@@ -16,7 +16,7 @@ void AudioFrame_Init(AudioFrameFrontendState* state, uint32_t frame_len, uint32_
 }
 
 uint8_t AudioFrame_PushPcmHop(AudioFrameFrontendState* state, const int16_t* pcm,
-                                      uint32_t sample_count)
+                              uint32_t sample_count)
 {
     if (sample_count == 0 || sample_count > state->frame_len) {
         return 0;
@@ -35,7 +35,7 @@ uint8_t AudioFrame_PushPcmHop(AudioFrameFrontendState* state, const int16_t* pcm
 }
 
 void AudioFrame_GetFrame(const AudioFrameFrontendState* state, float32_t* out_frame,
-                                 uint32_t out_len)
+                         uint32_t out_len)
 {
     uint32_t copy_len = out_len > FFT_LEN ? FFT_LEN : out_len;
     memcpy(out_frame, state->frame_buffer, copy_len * sizeof(float32_t));

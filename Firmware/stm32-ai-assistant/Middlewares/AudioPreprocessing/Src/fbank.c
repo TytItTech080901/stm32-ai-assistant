@@ -18,7 +18,7 @@ static uint32_t  pMelFilterStopIndices[NUM_MELS];
 
 void FbankFeature_Init(void)
 {
-    AudioFrameFrontend_Init(&S_AudioFrontend, FRAME_LEN, HOP_LEN);
+    AudioFrame_Init(&S_AudioFrontend, FRAME_LEN, HOP_LEN);
     if (AudioSpectrum_Init(&S_AudioSpectrum, SAMPLE_RATE, FRAME_LEN, FFT_LEN,
                            SPECTRUM_TYPE_POWER) != 0)
         while (1) {
@@ -46,9 +46,9 @@ void FbankFeature_Init(void)
     S_LogMelSpectr.TopdB              = 80.0f;
 }
 
-void AudioPreprocessing_Run(void)
+void FbankFeature_compute(void)
 {
-    AudioFrameFrontend_PushPcmHop(&S_AudioFrontend, pcm_buf, PCM_BUF_LEN);
-    AudioFrameFrontend_GetFrame(&S_AudioFrontend, pInFrame, FFT_LEN);
+    AudioFrame_PushPcmHop(&S_AudioFrontend, pcm_buf, PCM_BUF_LEN);
+    AudioFrame_GetFrame(&S_AudioFrontend, pInFrame, FFT_LEN);
     LogMelSpectrogramColumn(&S_LogMelSpectr, pInFrame, pOutColBuffer);
 }

@@ -11,18 +11,16 @@ extern "C" {
 #include "inmp441.h"
 #include "fft_visualer.h"
 
-typedef enum
-{
-  SHOW_AUDIO_CMD_STREAM_BEGIN = 0,
-  SHOW_AUDIO_CMD_PCM_HOP,
-  SHOW_AUDIO_CMD_STREAM_END,
+typedef enum {
+    SHOW_AUDIO_CMD_STREAM_BEGIN = 0,
+    SHOW_AUDIO_CMD_PCM_HOP,
+    SHOW_AUDIO_CMD_STREAM_END,
 } ShowAudioCmdType_t;
 
-typedef struct
-{
-  ShowAudioCmdType_t type;
-  uint16_t           sample_count;
-  int16_t            pcm[PCM_BUF_LEN];
+typedef struct {
+    ShowAudioCmdType_t type;
+    uint16_t           sample_count;
+    int16_t            pcm[PCM_BUF_LEN];
 } ShowAudioMessage_t;
 
 extern QueueHandle_t xShowAudioQueue;

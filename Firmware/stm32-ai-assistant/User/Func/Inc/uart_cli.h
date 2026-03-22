@@ -10,7 +10,7 @@
 
 extern StreamBufferHandle_t xUartRxStream;
 
-extern volatile uint8_t  g_dump_mode;
+// extern volatile uint8_t  g_dump_mode;
 
 int  fputc(int ch, FILE* f);
 void cli_parse(char* line);

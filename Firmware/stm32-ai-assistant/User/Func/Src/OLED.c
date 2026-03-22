@@ -1,5 +1,12 @@
 #include "main.h"
+#if defined(__GNUC__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmissing-braces"
+#endif
 #include "OLED_Font.h"
+#if defined(__GNUC__)
+#pragma GCC diagnostic pop
+#endif
 #include "fft_visualer.h"
 
 #define OLED_SCL_PORT GPIOB

@@ -9,19 +9,17 @@ extern "C" {
 #include "queue.h"
 #include "fft_visualer.h"
 
-typedef enum
-{
-  OLED_EVENT_KWS = 0,
-  OLED_EVENT_SPECTRUM_FRAME,
-  OLED_EVENT_SPECTRUM_STOP,
+typedef enum {
+    OLED_EVENT_KWS = 0,
+    OLED_EVENT_SPECTRUM_FRAME,
+    OLED_EVENT_SPECTRUM_STOP,
 } OLED_EventType_t;
 
-typedef struct
-{
-  OLED_EventType_t type;
-  float            confidence;
-  uint8_t          band_count;
-  uint8_t          bands[FFT_VISUAL_MAX_BANDS];
+typedef struct {
+    OLED_EventType_t type;
+    float            confidence;
+    uint8_t          band_count;
+    uint8_t          bands[FFT_VISUAL_MAX_BANDS];
 } OLED_Event_t;
 
 extern QueueHandle_t xOledEventQueue;

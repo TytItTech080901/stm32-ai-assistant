@@ -53,7 +53,6 @@ const osThreadAttr_t ShowAudioTask_attributes = {
     .priority   = (osPriority_t)osPriorityLow,
 };
 
-
 void User_Tasks_Init(void)
 {
     xFbankQueue = xQueueCreate(4, sizeof(float) * 80);

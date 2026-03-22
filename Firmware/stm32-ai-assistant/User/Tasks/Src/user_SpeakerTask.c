@@ -16,16 +16,16 @@
 
 void SpeakerTask(void* argument)
 {
-  // if (g_dump_mode) {
-  //   vTaskSuspend(NULL);
-  // }
-  Speaker_Request_t req;
+    // if (g_dump_mode) {
+    //   vTaskSuspend(NULL);
+    // }
+    Speaker_Request_t req;
 
-  Speaker_Init();
+    Speaker_Init();
 
-  for (;;) {
-    if (xQueueReceive(xSpeakerQueue, &req, portMAX_DELAY) == pdTRUE) {
-      Speaker_StreamPlay(req.flash_addr, req.samples);
+    for (;;) {
+        if (xQueueReceive(xSpeakerQueue, &req, portMAX_DELAY) == pdTRUE) {
+            Speaker_StreamPlay(req.flash_addr, req.samples);
+        }
     }
-  }
 }

@@ -29,12 +29,14 @@ void AudioFbankTask(void* argument)
     for (;;) {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
         Audio_GetPCM(audio_buf_idx);
+        FbankFeature_compute();
+        xQueueSend(xFbankQueue, pOutColBuffer, 0);
 
-        if (g_dump_mode) {
-            HAL_UART_Transmit(&huart1, (uint8_t*)pcm_buf, PCM_BUF_LEN * 2, HAL_MAX_DELAY);
-        } else {
-            AudioPreprocessing_Run();
-            xQueueSend(xFbankQueue, pOutColBuffer, 0);
-        }
+        // if (g_dump_mode) {
+        //     HAL_UART_Transmit(&huart1, (uint8_t*)pcm_buf, PCM_BUF_LEN * 2, HAL_MAX_DELAY);
+        // } else {
+        //     FbankFeature_compute();
+        //     xQueueSend(xFbankQueue, pOutColBuffer, 0);
+        // }
     }
 }
