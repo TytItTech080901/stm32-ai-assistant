@@ -1,9 +1,7 @@
 /**
  ******************************************************************************
  * @file    speaker.c
- * @brief   MAX98357 I2S 喇叭驱动 — 乒乓双缓冲 DMA 播放
- *
- *  I2S3: 16kHz, 16-bit, Philips, Master TX, DMA1_Stream5
+ * @brief   MAX98357 I2S speaker driver with W25Q streaming playback
  ******************************************************************************
  */
 
@@ -13,6 +11,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+#include "user_ShowAudioTask.h"
 
 #define SPK_BUF_SAMPLES 512
 
@@ -22,6 +21,20 @@ static int16_t buf_B[SPK_BUF_SAMPLES];
 static SemaphoreHandle_t xDmaDoneSem = NULL;
 
 QueueHandle_t xSpeakerQueue = NULL;
+
+static void Speaker_StreamVisualizeSamples(const int16_t* samples, uint32_t sample_count)
+{
+  static int16_t  hop_buffer[PCM_BUF_LEN];
+  static uint32_t hop_fill = 0;
+
+  for (uint32_t i = 0; i < sample_count; ++i) {
+    hop_buffer[hop_fill++] = samples[i];
+    if (hop_fill == PCM_BUF_LEN) {
+      ShowAudio_SubmitPcmSamples(hop_buffer, PCM_BUF_LEN);
+      hop_fill = 0;
+    }
+  }
+}
 
 void Speaker_Init(void)
 {
@@ -35,7 +48,6 @@ void Speaker_PlayFromFlash(uint32_t flash_addr, uint32_t samples)
   xQueueSend(xSpeakerQueue, &req, 0);
 }
 
-/* DMA 发送完成回调 */
 void HAL_I2S_TxCpltCallback(I2S_HandleTypeDef* hi2s)
 {
   if (hi2s->Instance == SPI3 && xDmaDoneSem != NULL) {
@@ -52,34 +64,31 @@ void Speaker_StreamPlay(uint32_t flash_addr, uint32_t total_samples)
   uint32_t remaining = total_samples;
   uint32_t read_addr = flash_addr;
 
-  /* 读第一块 */
-  uint32_t chunk = (remaining > SPK_BUF_SAMPLES) ? SPK_BUF_SAMPLES : remaining;
-  W25Q_Read(read_addr, (uint8_t*)play_buf, chunk * 2);
-  read_addr += chunk * 2;
-  remaining -= chunk;
+  ShowAudio_StreamBegin();
 
-  /* 启动 DMA 播放第一块 */
+  uint32_t chunk = (remaining > SPK_BUF_SAMPLES) ? SPK_BUF_SAMPLES : remaining;
+  W25Q_Read(read_addr, (uint8_t*)play_buf, chunk * 2U);
+  read_addr += chunk * 2U;
+  remaining -= chunk;
+  Speaker_StreamVisualizeSamples(play_buf, chunk);
+
   HAL_I2S_Transmit_DMA(&hi2s3, (uint16_t*)play_buf, chunk);
 
-  while (remaining > 0) {
-    /* DMA 在播放 play_buf 的同时，从 Flash 预读下一块到 load_buf */
+  while (remaining > 0U) {
     chunk = (remaining > SPK_BUF_SAMPLES) ? SPK_BUF_SAMPLES : remaining;
-    W25Q_Read(read_addr, (uint8_t*)load_buf, chunk * 2);
-    read_addr += chunk * 2;
+    W25Q_Read(read_addr, (uint8_t*)load_buf, chunk * 2U);
+    read_addr += chunk * 2U;
     remaining -= chunk;
+    Speaker_StreamVisualizeSamples(load_buf, chunk);
 
-    /* 等待当前 DMA 播放完成 */
     xSemaphoreTake(xDmaDoneSem, portMAX_DELAY);
-
-    /* 启动播放刚读好的 load_buf */
     HAL_I2S_Transmit_DMA(&hi2s3, (uint16_t*)load_buf, chunk);
 
-    /* 交换 */
     int16_t* tmp = play_buf;
     play_buf     = load_buf;
     load_buf     = tmp;
   }
 
-  /* 等最后一块播完 */
   xSemaphoreTake(xDmaDoneSem, portMAX_DELAY);
+  ShowAudio_StreamEnd();
 }

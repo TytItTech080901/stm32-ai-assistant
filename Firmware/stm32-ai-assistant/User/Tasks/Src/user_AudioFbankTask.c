@@ -2,13 +2,6 @@
   ******************************************************************************
   * @file    user_AudioFbankTask.c
   * @brief   Audio capture + Fbank feature extraction FreeRTOS task
-  *
-  *  数据流:
-  *   DMA ISR (inmp441.c)
-  *     → vTaskNotifyGiveFromISR  →  本任务被唤醒
-  *     → Audio_GetPCM()  提取 160 样本 PCM
-  *     → AudioPreprocessing_Run()  计算一列 80 维 LogMel Fbank
-  *     → 通过队列发送给 KwsInferTask 做逐帧推理
   ******************************************************************************
   */
 
@@ -29,19 +22,19 @@ QueueHandle_t xFbankQueue = NULL;
 
 void AudioFbankTask(void* argument)
 {
-  AudioIO_Init();
-  FbankFeature_Init();
-  configASSERT(xFbankQueue != NULL);
+    AudioIO_Init();
+    FbankFeature_Init();
+    configASSERT(xFbankQueue != NULL);
 
-  for (;;) {
-    ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-    Audio_GetPCM(audio_buf_idx);
+    for (;;) {
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+        Audio_GetPCM(audio_buf_idx);
 
-    if (g_dump_mode) {
-      HAL_UART_Transmit(&huart1, (uint8_t*)pcm_buf, PCM_BUF_LEN * 2, HAL_MAX_DELAY);
-    } else {
-      AudioPreprocessing_Run();
-      xQueueSend(xFbankQueue, pOutColBuffer, 0);
+        if (g_dump_mode) {
+            HAL_UART_Transmit(&huart1, (uint8_t*)pcm_buf, PCM_BUF_LEN * 2, HAL_MAX_DELAY);
+        } else {
+            AudioPreprocessing_Run();
+            xQueueSend(xFbankQueue, pOutColBuffer, 0);
+        }
     }
-  }
 }

@@ -114,7 +114,7 @@ void KwsInferTask(void* argument)
             HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_5);
             printf("[KWS] Keyword detected! avg_prob=%.2f\r\n", avg_prob);
 
-            OLED_KwsEvent_t oled_evt = {.confidence = avg_prob};
+            OLED_Event_t oled_evt = {.type = OLED_EVENT_KWS, .confidence = avg_prob};
             xQueueSend(xOledEventQueue, &oled_evt, 0);
 
             Speaker_PlayFromFlash(PROMPT_FLASH_ADDR, PROMPT_SAMPLES);

@@ -1,114 +1,73 @@
+#include "fft_visualer.h"
+#include "audio_frontend.h"
+#include "fbank.h"
 #include <math.h>
-#include <stdio.h>
+#include <string.h>
 
-#define PI 3.14159265358979323846
+static AudioFrameFrontendState s_fft_frontend;
+static AudioSpectrumState      s_fft_spectrum;
+static float32_t               s_fft_frame[FFT_LEN];
+static float32_t               s_fft_power[FFT_LEN / 2 + 1];
+static float32_t               s_smoothed_bands[FFT_VISUAL_MAX_BANDS];
 
-typedef struct
+void FFTvisualer_Init(void)
 {
-    float real;
-    float imag;
-} Complex;
-
-Complex add(Complex a, Complex b)
-{
-    Complex result;
-    result.real = a.real + b.real;
-    result.imag = a.imag + b.imag;
-    return result;
-}
-
-Complex sub(Complex a, Complex b)
-{
-    Complex result;
-    result.real = a.real - b.real;
-    result.imag = a.imag - b.imag;
-    return result;
-}
-
-Complex mul(Complex a, Complex b)
-{
-    Complex result;
-    result.real = a.real * b.real - a.imag * b.imag;
-    result.imag = a.real * b.imag + a.imag * b.real;
-    return result;
-}
-
-int reverse_bits(int x, int log2n)
-{
-    int n = 0;
-    for (int i = 0; i < log2n; i++) {
-        n <<= 1;
-        n |= (x & 1);
-        x >>= 1;
-    }
-    return n;
-}
-
-double log_base(double x, double base)
-{
-}
-
-void bit_reverse(Complex* x, int N)
-{
-    int log2n = log2(N);
-
-    for (int i = 0; i < N; i++) {
-        int j = reverse_bits(i, log2n);
-        if (j > i) {
-            Complex tmp = x[i];
-            x[i]        = x[j];
-            x[j]        = tmp;
+    AudioFrameFrontend_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
+    if (AudioSpectrum_Init(&s_fft_spectrum, SAMPLE_RATE, FRAME_LEN, FFT_LEN, SPECTRUM_TYPE_POWER) !=
+        0) {
+        while (1) {
         }
     }
+    FFTvisualer_Reset();
 }
 
-void fft(Complex* x, int N)
+void FFTvisualer_Reset(void)
 {
-    bit_reverse(x, N);
+    AudioFrameFrontend_Init(&s_fft_frontend, FRAME_LEN, HOP_LEN);
+    memset(s_smoothed_bands, 0, sizeof(s_smoothed_bands));
+}
 
-    for (int s = 0; s <= log2(N); s++) {
-        int m  = 1 << s;
-        int m2 = m >> 1;
+uint8_t FFTvisualer_ProcessPcmHop(const int16_t* pcm, uint32_t sample_count, uint8_t* out_bands,
+                                  uint32_t band_count)
+{
+    if (band_count == 0 || band_count > FFT_VISUAL_MAX_BANDS) {
+        return 0;
+    }
 
-        Complex wm;
-        wm.real = cos(-2 * PI / m);
-        wm.imag = sin(-2 * PI / m);
+    if (AudioFrameFrontend_PushPcmHop(&s_fft_frontend, pcm, sample_count) == 0) {
+        return 0;
+    }
 
-        for (int k = 0; k < N; k++) {
-            Complex w;
-            w.real = 1;
-            w.imag = 0;
+    AudioFrameFrontend_GetFrame(&s_fft_frontend, s_fft_frame, FFT_LEN);
+    AudioSpectrum_Compute(&s_fft_spectrum, s_fft_frame, s_fft_power, FFT_LEN / 2 + 1);
 
-            for (int i = 0; i < m2; i++) {
-                Complex t = mul(w, x[k + i + m2]);
-                Complex u = x[k + i];
+    for (uint32_t band = 0; band < band_count; ++band) {
+        uint32_t  start_bin = 1U + ((FFT_LEN / 2 - 1U) * band) / band_count;
+        uint32_t  stop_bin  = 1U + ((FFT_LEN / 2 - 1U) * (band + 1U)) / band_count;
+        float32_t sum       = 0.0f;
+        uint32_t  count     = 0;
 
-                x[k + i]      = add(u, t);
-                x[k + i + m2] = sub(u, t);
-
-                w = mul(w, wm);
-            }
+        if (stop_bin <= start_bin) {
+            stop_bin = start_bin + 1U;
         }
-    }
-}
 
-int main()
-{
-    int     N = 8;
-    Complex x[8];
+        for (uint32_t bin = start_bin; bin < stop_bin; ++bin) {
+            sum += s_fft_power[bin];
+            ++count;
+        }
 
-    // 输入：一个正弦波
-    for (int i = 0; i < N; i++) {
-        x[i].real = sin(2 * PI * i / N);
-        x[i].imag = 0;
-    }
+        float32_t avg_power = (count > 0U) ? (sum / (float32_t)count) : 0.0f;
+        float32_t db_level  = 10.0f * log10f(avg_power + 1.0e-12f) + 90.0f;
+        if (db_level < 0.0f) {
+            db_level = 0.0f;
+        } else if (db_level > 90.0f) {
+            db_level = 90.0f;
+        }
 
-    fft(x, N);
-
-    // 输出结果
-    for (int i = 0; i < N; i++) {
-        printf("%d: %.2f + %.2fi\n", i, x[i].real, x[i].imag);
+        s_smoothed_bands[band] = (s_smoothed_bands[band] * 0.65f) + (db_level * 0.35f);
+        out_bands[band] =
+            (uint8_t)((s_smoothed_bands[band] / 90.0f) * (float32_t)FFT_VISUAL_GRAPH_HEIGHT);
     }
 
-    return 0;
+    return 1;
 }

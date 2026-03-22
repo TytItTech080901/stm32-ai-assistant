@@ -1,7 +1,9 @@
 #include "user_TasksInit.h"
+#include "cmsis_os2.h"
 #include "user_AudioFbankTask.h"
 #include "user_KwsInferTask.h"
 #include "user_OledDisplayTask.h"
+#include "user_ShowAudioTask.h"
 #include "user_SpeakerTask.h"
 #include "inmp441.h"
 #include "uart_cli.h"
@@ -44,6 +46,14 @@ const osThreadAttr_t SpeakerTask_attributes = {
     .priority   = (osPriority_t)osPriorityNormal,
 };
 
+osThreadId_t         ShowAudioTaskHandle;
+const osThreadAttr_t ShowAudioTask_attributes = {
+    .name       = "ShowAudioTask",
+    .stack_size = 128 * 12,
+    .priority   = (osPriority_t)osPriorityLow,
+};
+
+
 void User_Tasks_Init(void)
 {
     xFbankQueue = xQueueCreate(4, sizeof(float) * 80);
@@ -59,7 +69,7 @@ void User_Tasks_Init(void)
     UartCliTaskHandle = osThreadNew(UartCliTask, NULL, &UartCliTask_attributes);
 
     /* 创建 OLED 显示任务 */
-    xOledEventQueue = xQueueCreate(2, sizeof(OLED_KwsEvent_t));
+    xOledEventQueue = xQueueCreate(6, sizeof(OLED_Event_t));
     configASSERT(xOledEventQueue != NULL);
     OledDisplayTaskHandle = osThreadNew(OledDisplayTask, NULL, &OledDisplayTask_attributes);
 
@@ -68,4 +78,8 @@ void User_Tasks_Init(void)
     xSpeakerQueue = xQueueCreate(2, sizeof(Speaker_Request_t));
     configASSERT(xSpeakerQueue != NULL);
     SpeakerTaskHandle = osThreadNew(SpeakerTask, NULL, &SpeakerTask_attributes);
+
+    xShowAudioQueue = xQueueCreate(6, sizeof(ShowAudioMessage_t));
+    configASSERT(xShowAudioQueue != NULL);
+    ShowAudioTaskHandle = osThreadNew(ShowAudioTask, NULL, &ShowAudioTask_attributes);
 }

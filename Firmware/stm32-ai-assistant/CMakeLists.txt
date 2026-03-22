@@ -46,9 +46,6 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
     ${CMAKE_CURRENT_SOURCE_DIR}/User/*.c
 )
-list(REMOVE_ITEM USER_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/User/Func/Src/fft_visualer.c
-)
 
 # Collect all C sources under AudioPreprocessing/ recursively.
 file(GLOB_RECURSE AUDIO_PREPROCESSING_SOURCES CONFIGURE_DEPENDS
